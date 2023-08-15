@@ -12,13 +12,13 @@ class Main:
             elif not a or not b:
                 print("Debe ingresar ambos valores primero")
             elif option == 3:
-                print(self.div(a, b))
-            elif option == 4:
-                print(self.mul(a,b))
-            elif option == 5:
-                print(self.sub(a, b))
-            elif option == 6:
                 print(self.sum(a, b))
+            elif option == 4:
+                print(self.sub(a,b))
+            elif option == 5:
+                print(self.mul(a, b))
+            elif option == 6:
+                print(self.div(a, b))
 
             option = self.get_option()
 
@@ -39,7 +39,6 @@ class Main:
 
         if option < 1 or option > 7:
             print("Opción inválida")
-            return self.get_option
 
         return option
 
@@ -57,4 +56,4 @@ class Main:
 
 
 if __name__ == '__main__':
-    Main().run
+    Main().run()
